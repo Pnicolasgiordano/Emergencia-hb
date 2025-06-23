@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emergencia HB</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="contenedor">
+    <h1>Emergencia HB</h1>
+    <p>Ingresa tus sintomas y avisanos que estas en camino</p>
+
+    <form id="formulario">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" required>
+
+      <label for="sintomas">Sintomas:</label>
+      <textarea id="sintomas" required></textarea>
+
+      <label for="otro">Otros sintomas (opcional):</label>
+      <input type="text" id="otro">
+
+      <button type="submit">Avisar al hospital</button>
+    </form>
+
+    <div id="confirmacion" style="display:none">
+      <p>Tu aviso fue recibido. Te estamos esperando.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
